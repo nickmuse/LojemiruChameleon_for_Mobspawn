@@ -1,5 +1,5 @@
 
 moving = false;
 
-compression = 0;
+compression = .99;//0;
 touched = false;
