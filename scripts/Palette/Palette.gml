@@ -257,7 +257,11 @@ function TruePalette(_x, _y) : ScreenElement(_x, _y, 8, 8) constructor {
 	
 	on_right_click = function(_x, _y) {
 		selected = clamp(floor(_y / w), 0, array_length(colors) - 1);
-		color_picker_set(picker, hex_to_color(get_string("","")));
+		if keyboard_check(vk_control) {
+			color_picker_set(picker, hex_to_color(clipboard_get_text()));
+		} else {
+			color_picker_set(picker, hex_to_color(get_string("","")));
+		}
 	}
 	
 	do_mwheel = function(_mw, _x, _y) {
