@@ -117,3 +117,8 @@ load_pal = function() {
 		show_message("Something went wrong trying to load. File was not found or is invalid.");
 	}
 }
+
+// Nick - Autoload Mobspawn Example
+ds_list_add(sprites, sMobspawnDemo);
+if (palette == noone) palette = new TruePalette(palX, palY);
+palette.add_colors_from_sprite(sprites[| ds_list_size(sprites) - 1]);

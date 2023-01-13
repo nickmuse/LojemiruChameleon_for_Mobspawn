@@ -8,6 +8,7 @@
     {"id":{"name":"fntPressStart2P","path":"fonts/fntPressStart2P/fntPressStart2P.yy",},"order":0,},
     {"id":{"name":"oButton","path":"objects/oButton/oButton.yy",},"order":2,},
     {"id":{"name":"Sprite9","path":"sprites/Sprite9/Sprite9.yy",},"order":11,},
+    {"id":{"name":"sMobspawnDemo","path":"sprites/sMobspawnDemo/sMobspawnDemo.yy",},"order":9,},
     {"id":{"name":"oMixSlider","path":"objects/oMixSlider/oMixSlider.yy",},"order":12,},
     {"id":{"name":"example","path":"objects/example/example.yy",},"order":3,},
     {"id":{"name":"oTest","path":"objects/oTest/oTest.yy",},"order":0,},
