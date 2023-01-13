@@ -63,7 +63,7 @@ export_pal = function() {
 	var fname = get_save_filename("png file|*.png", "");
 	if (fname != "" && surface_exists(palette.renderSurface)) {
 		surface_save(palette.renderSurface, fname);
-		show_message("Palette sprite exported.");
+		//show_message("Palette sprite exported.");
 	}
 	else {
 		// do nothing for now lol, just git gud
