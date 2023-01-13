@@ -34,6 +34,10 @@ if (palette != noone) {
 		palette.do_middle_click(mouse_x, mouse_y);
 	}
 	
+	if (mouse_check_button_pressed(mb_right)) {
+		palette.do_right_click(mouse_x, mouse_y);
+	}
+	
 	if (keyboard_check_pressed(vk_left)) prev_sprite();
 	else if (keyboard_check_pressed(vk_right)) next_sprite();
 }

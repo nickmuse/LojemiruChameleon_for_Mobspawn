@@ -255,6 +255,11 @@ function TruePalette(_x, _y) : ScreenElement(_x, _y, 8, 8) constructor {
 		color_picker_set(picker, oldColors[selected].rgb);
 	}
 	
+	on_right_click = function(_x, _y) {
+		selected = clamp(floor(_y / w), 0, array_length(colors) - 1);
+		color_picker_set(picker, hex_to_color(get_string("","")));
+	}
+	
 	do_mwheel = function(_mw, _x, _y) {
 		if ((_x >= x - 9 && _x <= x + w + 8)) {
 		   if (_mw > 0 && y + (w * array_length(colors)) > room_height / 2) y -= 8;
@@ -498,6 +503,14 @@ function ScreenElement(_x, _y, _w, _h) constructor {
 	}
 	
 	on_middle_click = function(_x, _y) { }
+	
+	static do_right_click = function(_x, _y) {
+		if (point_in_rectangle(_x, _y, x, y, x + w, y + h)) {
+			on_right_click(_x - x, _y - y);
+		}
+	}
+	
+	on_right_click = function(_x, _y) { }
 	
 	static update_click = function(_x, _y) {
 		if (global.selectedElement == self) {
