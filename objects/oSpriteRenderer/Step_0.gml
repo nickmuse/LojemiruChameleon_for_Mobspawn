@@ -1,8 +1,8 @@
 if (instance_exists(oPalBuilder) && ds_list_size(oPalBuilder.sprites) > 0) {
 
 	if (mouse_x <= bbox_right && mouse_x >= bbox_left && mouse_y >= bbox_top && mouse_y <= bbox_bottom) {
-		scale += (mouse_wheel_up() - mouse_wheel_down());
-		scale = clamp(scale, 1, 10);
+		scale += .5 * (mouse_wheel_up() - mouse_wheel_down());
+		scale = clamp(scale, .5, 2);
 
 		if (mouse_check_button_pressed(mb_middle)) {
 			drawX = 1;
