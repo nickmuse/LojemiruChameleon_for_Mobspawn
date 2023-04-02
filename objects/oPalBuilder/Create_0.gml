@@ -1,4 +1,5 @@
-window_set_size(window_get_width() * 3, window_get_height() * 3);
+var _sc = 2
+window_set_size(window_get_width() * _sc, window_get_height() * _sc);
 alarm[0] = 1;
 
 chameleon_init();
