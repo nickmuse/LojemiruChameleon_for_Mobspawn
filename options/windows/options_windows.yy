@@ -8,7 +8,7 @@
   "option_windows_copy_exe_to_dest": false,
   "option_windows_copyright_info": "Lojemiru",
   "option_windows_description_info": "A palette editor for the Chameleon shader asset.",
-  "option_windows_disable_sandbox": false,
+  "option_windows_disable_sandbox": true,
   "option_windows_display_cursor": true,
   "option_windows_display_name": "Chameleon Palette Editor",
   "option_windows_enable_steam": false,
